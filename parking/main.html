@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ParkLOT</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <section class="header">
+  
+    </section>
+    <div class="parking-container">
+        <select id="parking">
+            <option value="10">Branch 1 ($10)</option>
+            <option value="12">Branch 2 ($20) </option>
+            <option value="8">Branch 3 ($40)</option>
+            <option value="7">Branch 5 ($50)</option>
+        
+        </select>
+    </div>
+    <ul class="showcase">
+        <li>
+            <div class="Place"></div>
+            <small>N/A</small>
+            
+        </li>
+        <li>
+            <div class="Place selected"></div>
+            <small>Selected</small>
+        </li>
+        <li>
+            <div class="Place occupied"></div>
+            <small>Occupied</small>
+        </li>
+    </ul>    
+    <div class="container">
+        <div class="segment"> 
+        </div>
+            <div class="row">
+                <div class="Place"></div>
+                <div class="Place"></div>
+                <div class="Place"></div>
+                <div class="Place occupied"></div>
+                <div class="Place"></div>
+            </div>
+            <div class="row">
+                <div class="Place"></div>
+                <div class="Place occupied"></div>
+                <div class="Place"></div>
+                <div class="Place"></div>
+                <div class="Place"></div>
+            </div>
+            <div class="row">
+                <div class="Place"></div>
+                <div class="Place"></div>
+                <div class="Place"></div>
+                <div class="Place"></div>
+                <div class="Place"></div>
+            </div>
+       
+    </div>
+    <div class="containt">
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+   <img src="tic.png" >
+   <h2>Thank You!</h2>
+   <p>Your slot is booked</p>
+    <button type="button" onclick="closePopup()">OK</button>
+    </div>
+</div>
+    
+    
+   
+  
+   
+    <script src="script.js">Submit</script>
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+            
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato','sans-serif';
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,7),rgba(2,5,20,0.2)),url(car2.png);
+    background-position:center ;
+    background-size:cover ;
+    position: relative;
+    height: 100%
+        ;
+}
+
+.btn1 {
+    margin-top: 20px;
+    padding: 8px;
+    border-radius: 40px;
+    border: none;
+}
+
+.Place {
+    background-image:url(car100.png);
+    border-radius: 20%;
+    height: 180px;
+    width: 90px;
+    margin: 3px; 
+    object-fit: cover;
+    object-position: 25% 25%;
+   
+
+} 
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.parking-container{
+    margin: 20px 0;
+}
+.parking-container select{
+    background-color: palevioletred;
+    border: 0;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-left: 20px;
+    padding: 10px 25px 10px 25px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    visibility: hidden;
+}
+.Place.selected{
+    background-image: url("pinkcar.png");
+    border: radius 20%;
+    
+}
+.Place.occupied{
+    background-image: url("car_0.png");
+}
+.Place:nth-of-type(6){
+    margin-right: 30px;
+}
+
+.Place:not(.occupied):hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .Place:not(occupied):hover {
+    cursor: default;
+    transform: scale(1);
+}
+.showcase {
+    background-color: rgba(0, 0,0, 0.1);
+    padding: 10px 20px;
+    color: white;
+
+    
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.showcase li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+.showcase li small{
+    margin-left: 10px;
+}
+.segment{
+    background-color:white;
+    height: 10px;
+    width: 100%;
+    margin: 15px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.75);
+
+
+}
+p.text {
+    margin: 5px 0;
+
+}
+ p.text span{
+    color:rgb(214, 74, 214)
+ }
+
+.btn{
+    padding: 10px 60px;
+    background: #fff;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 30px;
+    margin-bottom: 50px;
+}
+.popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30PX 30PX;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s ,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.popup img{
+    width: 100px;
+    margin-top: -50px;
+    border-radius: 50%;
+    
+}
+.popup h2{
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+
+}
+.popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
